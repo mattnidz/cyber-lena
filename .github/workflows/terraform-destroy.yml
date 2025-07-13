@@ -1,12 +1,10 @@
-name: Terraform Deploy Prod (main branch) to Azure
+name: Terraform Destroy (Manual)
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:  # This enables manual trigger in GitHub Actions UI
 
 jobs:
-  terraform:
+  destroy:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,15 +23,6 @@ jobs:
 
     - name: Terraform Init
       run: terraform init
-
-    - name: Terraform Validate
-      run: terraform validate
-
-    - name: Terraform Plan
-      run: terraform plan
-
-    - name: Terraform Apply
-      run: terraform apply -auto-approve
 
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
