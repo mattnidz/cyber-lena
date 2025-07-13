@@ -21,6 +21,7 @@ resource "azurerm_app_service_plan" "plan" {
   }
 }
 
+
 resource "azurerm_linux_web_app" "app" {
   name                = var.web_app_name[var.environment]
   location            = azurerm_resource_group.rg.location
