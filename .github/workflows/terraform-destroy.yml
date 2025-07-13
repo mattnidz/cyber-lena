@@ -6,6 +6,9 @@ on:
 jobs:
   destroy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform/envs/prod
 
     steps:
     - name: Checkout code
