@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CloudSec Learn</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Welcome to CloudSec Learn!</h1>
+  <p>Learn about Cloud Security step by step.</p>
+  <ul>
+    <% lessons.forEach(lesson => { %>
+      <li>
+        <a href="/lesson/<%= lesson.id %>"><%= lesson.title %></a>
+        | <a href="/quiz/<%= lesson.id.replace('lesson', 'quiz') %>">Take Quiz</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

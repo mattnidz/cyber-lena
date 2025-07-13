@@ -1,0 +1,12 @@
+[
+  {
+    "id": "iam-basics",
+    "title": "Identity & Access Management (IAM)",
+    "content": "IAM controls who can access what in your cloud environment. Use least privilege, enforce MFA, and monitor access logs regularly."
+  },
+  {
+    "id": "encryption",
+    "title": "Encryption in Cloud",
+    "content": "Encrypt data in transit and at rest using KMS or customer-managed keys. Understand how to rotate keys and audit their usage."
+  }
+]
