@@ -1,6 +1,9 @@
+variable "environment" {
+  type = string
+}
+
 variable "resource_group_name" {
-  type    = string
-  default = "my-app-rg"
+  type    = map(any)
 }
 
 variable "location" {
@@ -9,11 +12,9 @@ variable "location" {
 }
 
 variable "app_service_plan_name" {
-  type    = string
-  default = "my-app-plan"
+  type    = map(any)
 }
 
 variable "web_app_name" {
-  type    = string
-  default = "my-nodejs-webapp-123"
+  type    = map(any)
 }
