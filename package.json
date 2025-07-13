@@ -4,6 +4,7 @@
   "description": "Interactive Node.js app to teach cloud security",
   "main": "app.js",
   "scripts": {
+    "build": "npm install",
     "start": "node app.js"
   },
   "dependencies": {
